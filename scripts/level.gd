@@ -1,0 +1,12 @@
+class_name Level extends Node2D
+
+#Sets the y_sort, sets the player as its children when loaded and free itself when unloaded
+func _ready() -> void:
+	y_sort_enabled = true
+	PlayerManager.set_player_parent(self)
+	LevelManager.level_load_started.connect(free_level)
+	
+#Function to free itself
+func free_level() -> void:
+	PlayerManager.remove_player_parent(self)
+	queue_free()

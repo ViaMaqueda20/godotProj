@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://ddkypn0fx5mjg"]
+
+[ext_resource type="Script" uid="uid://ldkvwxxuw7e2" path="res://scripts/level_transition.gd" id="1_g1ell"]
+[ext_resource type="Texture2D" uid="uid://dwe5xbhu8357f" path="res://assets/player_animation_fin.png" id="2_hp486"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3r6c7"]
+size = Vector2(32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hp486"]
+atlas = ExtResource("2_hp486")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q1vxx"]
+size = Vector2(32, 32)
+
+[node name="LevelTransition" type="StaticBody2D" unique_id=1222143694]
+collision_layer = 256
+collision_mask = 0
+script = ExtResource("1_g1ell")
+
+[node name="TransitionArea" type="Area2D" parent="." unique_id=753984624]
+collision_layer = 256
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TransitionArea" unique_id=1035748758]
+position = Vector2(0, 16)
+shape = SubResource("RectangleShape2D_3r6c7")
+debug_color = Color(0.9091329, 0.00011089325, 0.7361404, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2120309625]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(0, -16)
+texture = SubResource("AtlasTexture_hp486")
+hframes = 23
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=239097723]
+position = Vector2(0, 16)
+shape = SubResource("RectangleShape2D_q1vxx")

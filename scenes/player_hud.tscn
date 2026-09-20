@@ -1,0 +1,155 @@
+[gd_scene format=3 uid="uid://ce7it2wm3wwum"]
+
+[ext_resource type="Script" uid="uid://cet70xf2yani3" path="res://scenes/player_hud.gd" id="1_er5qu"]
+[ext_resource type="Texture2D" uid="uid://cs4236y5wns32" path="res://assets/life.png" id="2_or0tx"]
+[ext_resource type="PackedScene" uid="uid://cwcnb70jb375m" path="res://scenes/heart_gui.tscn" id="3_qcjqi"]
+[ext_resource type="Texture2D" uid="uid://y4lwf3lkwc35" path="res://assets/arrow_touchpad.png" id="4_or0tx"]
+[ext_resource type="Texture2D" uid="uid://du23l5umn3wb" path="res://assets/pause_touchpad.png" id="5_qcjqi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q1vxx"]
+atlas = ExtResource("2_or0tx")
+region = Rect2(27, 0, 21, 9)
+
+[node name="PlayerHud" type="CanvasLayer" unique_id=43013504]
+script = ExtResource("1_er5qu")
+
+[node name="Control" type="Control" parent="." unique_id=950673037]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -322.0
+offset_bottom = 178.0
+grow_horizontal = 0
+
+[node name="LifeGui" type="Control" parent="Control" unique_id=273733343]
+anchors_preset = 0
+offset_left = 259.0
+offset_top = -1.0
+offset_right = 320.0
+offset_bottom = 48.0
+
+[node name="TextureRect" type="TextureRect" parent="Control/LifeGui" unique_id=2045273217]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 4.0
+offset_right = 38.0
+offset_bottom = 16.0
+texture = SubResource("AtlasTexture_q1vxx")
+
+[node name="HFlowContainer" type="HFlowContainer" parent="Control/LifeGui" unique_id=1098654321]
+layout_mode = 0
+offset_left = -20.0
+offset_top = 18.0
+offset_right = 55.0
+offset_bottom = 63.0
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 9
+alignment = 1
+
+[node name="HeartGui" parent="Control/LifeGui/HFlowContainer" unique_id=1763743586 instance=ExtResource("3_qcjqi")]
+layout_mode = 2
+
+[node name="HeartGui3" parent="Control/LifeGui/HFlowContainer" unique_id=1101515180 instance=ExtResource("3_qcjqi")]
+layout_mode = 2
+
+[node name="HeartGui4" parent="Control/LifeGui/HFlowContainer" unique_id=1088423066 instance=ExtResource("3_qcjqi")]
+layout_mode = 2
+
+[node name="HeartGui5" parent="Control/LifeGui/HFlowContainer" unique_id=365847574 instance=ExtResource("3_qcjqi")]
+layout_mode = 2
+
+[node name="HeartGui6" parent="Control/LifeGui/HFlowContainer" unique_id=2014389807 instance=ExtResource("3_qcjqi")]
+layout_mode = 2
+
+[node name="HeartGui7" parent="Control/LifeGui/HFlowContainer" unique_id=1506397353 instance=ExtResource("3_qcjqi")]
+layout_mode = 2
+
+[node name="HeartGui8" parent="Control/LifeGui/HFlowContainer" unique_id=316405682 instance=ExtResource("3_qcjqi")]
+layout_mode = 2
+
+[node name="HeartGui9" parent="Control/LifeGui/HFlowContainer" unique_id=750919968 instance=ExtResource("3_qcjqi")]
+layout_mode = 2
+
+[node name="HeartGui10" parent="Control/LifeGui/HFlowContainer" unique_id=1172403004 instance=ExtResource("3_qcjqi")]
+layout_mode = 2
+
+[node name="HeartGui11" parent="Control/LifeGui/HFlowContainer" unique_id=1753055231 instance=ExtResource("3_qcjqi")]
+layout_mode = 2
+
+[node name="HeartGui12" parent="Control/LifeGui/HFlowContainer" unique_id=582038734 instance=ExtResource("3_qcjqi")]
+layout_mode = 2
+
+[node name="HeartGui13" parent="Control/LifeGui/HFlowContainer" unique_id=1687821880 instance=ExtResource("3_qcjqi")]
+layout_mode = 2
+
+[node name="HeartGui14" parent="Control/LifeGui/HFlowContainer" unique_id=1423942975 instance=ExtResource("3_qcjqi")]
+layout_mode = 2
+
+[node name="HeartGui15" parent="Control/LifeGui/HFlowContainer" unique_id=1592263587 instance=ExtResource("3_qcjqi")]
+layout_mode = 2
+
+[node name="HeartGui16" parent="Control/LifeGui/HFlowContainer" unique_id=1811445386 instance=ExtResource("3_qcjqi")]
+layout_mode = 2
+
+[node name="HeartGui17" parent="Control/LifeGui/HFlowContainer" unique_id=194151857 instance=ExtResource("3_qcjqi")]
+layout_mode = 2
+
+[node name="HeartGui18" parent="Control/LifeGui/HFlowContainer" unique_id=1515768026 instance=ExtResource("3_qcjqi")]
+layout_mode = 2
+
+[node name="HeartGui19" parent="Control/LifeGui/HFlowContainer" unique_id=1690485636 instance=ExtResource("3_qcjqi")]
+layout_mode = 2
+
+[node name="HeartGui20" parent="Control/LifeGui/HFlowContainer" unique_id=793507973 instance=ExtResource("3_qcjqi")]
+layout_mode = 2
+
+[node name="HeartGui2" parent="Control/LifeGui/HFlowContainer" unique_id=146920960 instance=ExtResource("3_qcjqi")]
+layout_mode = 2
+
+[node name="TouchpadGui" type="Control" parent="Control" unique_id=1714563183]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ButtonUp" type="TouchScreenButton" parent="Control/TouchpadGui" unique_id=467124202]
+modulate = Color(1, 1, 1, 0.52156866)
+position = Vector2(256, 108)
+texture_normal = ExtResource("4_or0tx")
+passby_press = true
+action = "key_up"
+visibility_mode = 1
+
+[node name="ButtonDown" type="TouchScreenButton" parent="Control/TouchpadGui" unique_id=1010903189]
+modulate = Color(1, 1, 1, 0.52156866)
+position = Vector2(288, 174)
+rotation = 3.1415927
+texture_normal = ExtResource("4_or0tx")
+passby_press = true
+action = "key_down"
+visibility_mode = 1
+
+[node name="ButtonRight" type="TouchScreenButton" parent="Control/TouchpadGui" unique_id=2053587165]
+modulate = Color(1, 1, 1, 0.52156866)
+position = Vector2(322, 125)
+rotation = 1.5707964
+texture_normal = ExtResource("4_or0tx")
+passby_press = true
+action = "key_right"
+visibility_mode = 1
+
+[node name="ButtonLeft" type="TouchScreenButton" parent="Control/TouchpadGui" unique_id=1024074681]
+modulate = Color(1, 1, 1, 0.52156866)
+position = Vector2(222, 157)
+rotation = -1.5707964
+texture_normal = ExtResource("4_or0tx")
+passby_press = true
+action = "key_left"
+visibility_mode = 1
+
+[node name="PauseButton" type="TouchScreenButton" parent="Control/TouchpadGui" unique_id=718807897]
+self_modulate = Color(1, 1, 1, 0.34901962)
+position = Vector2(3, 1)
+texture_normal = ExtResource("5_qcjqi")
+action = "key_esc"
+visibility_mode = 1

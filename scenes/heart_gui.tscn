@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cwcnb70jb375m"]
+
+[ext_resource type="Script" uid="uid://bgg7n1ich6nnr" path="res://scenes/heart_gui.gd" id="1_x0egl"]
+[ext_resource type="Texture2D" uid="uid://cs4236y5wns32" path="res://assets/life.png" id="2_tp52o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0c2ut"]
+atlas = ExtResource("2_tp52o")
+region = Rect2(0, 0, 27, 9)
+
+[node name="HeartGui" type="Control" unique_id=1763743586]
+layout_mode = 3
+anchors_preset = 0
+size_flags_horizontal = 4
+script = ExtResource("1_x0egl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=735584111]
+position = Vector2(4.4990444, 4.522371)
+texture = SubResource("AtlasTexture_0c2ut")
+hframes = 3

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://htsu3544qqff"]
+
+[ext_resource type="Script" uid="uid://ci0xtg5phebn4" path="res://scripts/player_spawner.gd" id="1_27dp6"]
+[ext_resource type="Texture2D" uid="uid://dwe5xbhu8357f" path="res://assets/player_animation_fin.png" id="2_hiofm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0c2ut"]
+atlas = ExtResource("2_hiofm")
+
+[node name="PlayerSpawner" type="Node2D" unique_id=353113852]
+script = ExtResource("1_27dp6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=500004534]
+modulate = Color(0, 1, 0, 1)
+texture = SubResource("AtlasTexture_0c2ut")
+hframes = 23
+frame = 1
