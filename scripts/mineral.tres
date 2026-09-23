@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dc0ql7f246kst"]
+
+[ext_resource type="Script" uid="uid://c7f0p4ydqa32u" path="res://scenes/item_data.gd" id="1_vtanj"]
+[ext_resource type="Texture2D" uid="uid://di582hekpjtca" path="res://assets/items.png" id="2_da52d"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fslqr"]
+atlas = ExtResource("2_da52d")
+region = Rect2(0, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_vtanj")
+name = "Mineral"
+description = "C'attuppi u poccu"
+texture = SubResource("AtlasTexture_fslqr")
+metadata/_custom_type_script = "uid://c7f0p4ydqa32u"

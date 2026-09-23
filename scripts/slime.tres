@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://cttx1km1x5bx"]
+
+[ext_resource type="Script" uid="uid://c7f0p4ydqa32u" path="res://scenes/item_data.gd" id="1_gd8qq"]
+[ext_resource type="Texture2D" uid="uid://di582hekpjtca" path="res://assets/items.png" id="2_tgv27"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fslqr"]
+atlas = ExtResource("2_tgv27")
+region = Rect2(16, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_gd8qq")
+name = "Slime"
+description = "sburracchiato viola"
+texture = SubResource("AtlasTexture_fslqr")
+metadata/_custom_type_script = "uid://c7f0p4ydqa32u"

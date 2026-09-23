@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://gqlhf6mmuypj"]
+
+[ext_resource type="Script" uid="uid://c7f0p4ydqa32u" path="res://scenes/item_data.gd" id="1_c7xno"]
+[ext_resource type="Texture2D" uid="uid://di582hekpjtca" path="res://assets/items.png" id="2_fslqr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fslqr"]
+atlas = ExtResource("2_fslqr")
+region = Rect2(32, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_c7xno")
+name = "Leaf"
+description = "ora ma mino we we"
+texture = SubResource("AtlasTexture_fslqr")
+metadata/_custom_type_script = "uid://c7f0p4ydqa32u"

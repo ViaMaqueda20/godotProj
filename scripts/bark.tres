@@ -1,14 +1,14 @@
 [gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://cv6rnvkgf4gfd"]
 
-[ext_resource type="Script" uid="uid://c7f0p4ydqa32u" path="res://scenes/item_data.gd" id="1_y405u"]
-[ext_resource type="Texture2D" uid="uid://di582hekpjtca" path="res://assets/items.png" id="2_m2mgm"]
+[ext_resource type="Script" uid="uid://c7f0p4ydqa32u" path="res://scenes/item_data.gd" id="1_akb42"]
+[ext_resource type="Texture2D" uid="uid://di582hekpjtca" path="res://assets/items.png" id="2_6pf46"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m2mgm"]
-atlas = ExtResource("2_m2mgm")
+atlas = ExtResource("2_6pf46")
 region = Rect2(48, 0, 16, 16)
 
 [resource]
-script = ExtResource("1_y405u")
+script = ExtResource("1_akb42")
 name = "Bark"
 description = "oh no sburo"
 texture = SubResource("AtlasTexture_m2mgm")

@@ -3,10 +3,14 @@ extends CanvasLayer
 signal shown()
 signal hidden()
 
+@onready var resume_button : Button = $Control/Button
+@onready var item_description_label: Label = $Control/ItemDescriptionLabel
+
 var is_paused : bool
 
 func _ready() -> void:
 	LevelManager.level_load_started.connect(hide_pause_menu)
+	resume_button.pressed.connect(hide_pause_menu)
 	hide_pause_menu()
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -28,3 +32,6 @@ func hide_pause_menu() -> void:
 	visible = false
 	get_tree().paused = false
 	hidden.emit()
+	
+func update_item_description(text : String) -> void:
+	item_description_label.text = text
