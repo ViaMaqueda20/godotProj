@@ -11,7 +11,7 @@ signal interaction_pressed()
 
 ## Preloaded player scene for instantiation
 const PLAYER = preload("res://scenes/player.tscn")
-
+const PLAYER_INVENTORY_DATA : InventoryData = preload("res://scripts/inventory_data.tres")
 
 ## Reference to the current player instance
 var player : Player
@@ -64,3 +64,4 @@ func remove_player_parent(_parent : Node) -> void:
 func _create_player_instance() -> void:
 	player = PLAYER.instantiate()
 	add_child(player)
+	

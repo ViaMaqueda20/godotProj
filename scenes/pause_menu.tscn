@@ -3,13 +3,7 @@
 [ext_resource type="Script" uid="uid://byk641trpbdl0" path="res://scenes/pause_menu.gd" id="1_n87rw"]
 [ext_resource type="Script" uid="uid://uuqhpf44odvs" path="res://scenes/inventory_ui.gd" id="2_kukqi"]
 [ext_resource type="Texture2D" uid="uid://bwie4wbsew1yg" path="res://assets/item_container.png" id="3_5d2l8"]
-[ext_resource type="Script" uid="uid://b8y8nijyvfm0h" path="res://scripts/inventory_data.gd" id="4_7l7mv"]
-[ext_resource type="Script" uid="uid://dsk4dpo1jd77l" path="res://scripts/slot_data.gd" id="5_v4r4p"]
-[ext_resource type="Resource" uid="uid://gqlhf6mmuypj" path="res://scripts/leaf.tres" id="6_71k7c"]
-[ext_resource type="Resource" uid="uid://cttx1km1x5bx" path="res://scripts/slime.tres" id="6_v4r4p"]
-[ext_resource type="Resource" uid="uid://nrbxqfin4h1i" path="res://scripts/potion.tres" id="8_cmnsq"]
-[ext_resource type="Resource" uid="uid://cv6rnvkgf4gfd" path="res://scripts/bark.tres" id="9_ofnjo"]
-[ext_resource type="Resource" uid="uid://dc0ql7f246kst" path="res://scripts/mineral.tres" id="10_1rgno"]
+[ext_resource type="Resource" uid="uid://dplqy67fg7n3q" path="res://scripts/inventory_data.tres" id="4_5d2l8"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0c2ut"]
 content_margin_left = 6.0
@@ -21,39 +15,6 @@ texture_margin_left = 10.0
 texture_margin_top = 10.0
 texture_margin_right = 10.0
 texture_margin_bottom = 10.0
-
-[sub_resource type="Resource" id="Resource_x12pp"]
-script = ExtResource("5_v4r4p")
-item_data = ExtResource("6_71k7c")
-metadata/_custom_type_script = "uid://dsk4dpo1jd77l"
-
-[sub_resource type="Resource" id="Resource_7l7mv"]
-script = ExtResource("5_v4r4p")
-item_data = ExtResource("6_v4r4p")
-quantity = 5
-metadata/_custom_type_script = "uid://dsk4dpo1jd77l"
-
-[sub_resource type="Resource" id="Resource_gd8qq"]
-script = ExtResource("5_v4r4p")
-item_data = ExtResource("8_cmnsq")
-metadata/_custom_type_script = "uid://dsk4dpo1jd77l"
-
-[sub_resource type="Resource" id="Resource_tgv27"]
-script = ExtResource("5_v4r4p")
-item_data = ExtResource("9_ofnjo")
-quantity = 38
-metadata/_custom_type_script = "uid://dsk4dpo1jd77l"
-
-[sub_resource type="Resource" id="Resource_16es3"]
-script = ExtResource("5_v4r4p")
-item_data = ExtResource("10_1rgno")
-quantity = 6
-metadata/_custom_type_script = "uid://dsk4dpo1jd77l"
-
-[sub_resource type="Resource" id="Resource_fddbe"]
-script = ExtResource("4_7l7mv")
-slots = Array[ExtResource("5_v4r4p")]([null, SubResource("Resource_x12pp"), null, SubResource("Resource_7l7mv"), null, null, null, SubResource("Resource_gd8qq"), SubResource("Resource_tgv27"), SubResource("Resource_16es3"), null, null])
-metadata/_custom_type_script = "uid://b8y8nijyvfm0h"
 
 [node name="PauseMenu" type="CanvasLayer" unique_id=1521935836]
 process_mode = 3
@@ -117,4 +78,4 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 columns = 6
 script = ExtResource("2_kukqi")
-inventory_data = SubResource("Resource_fddbe")
+inventory_data = ExtResource("4_5d2l8")

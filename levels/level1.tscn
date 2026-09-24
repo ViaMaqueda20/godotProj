@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://c7ky5kl087emj" path="res://scripts/level.gd" id="1_g2h75"]
 [ext_resource type="PackedScene" uid="uid://dc6kj6noyxakd" path="res://scenes/tile_map_layer.tscn" id="2_m7ahb"]
 [ext_resource type="PackedScene" uid="uid://ddkypn0fx5mjg" path="res://scenes/level_transition.tscn" id="3_dwgg1"]
+[ext_resource type="PackedScene" uid="uid://brtbxhvn4siis" path="res://scenes/item_pickup.tscn" id="4_61w3m"]
+[ext_resource type="Resource" uid="uid://cttx1km1x5bx" path="res://scripts/slime.tres" id="5_pdpul"]
 
 [node name="Level1" type="Node2D" unique_id=1458817928]
 script = ExtResource("1_g2h75")
@@ -24,3 +26,7 @@ target_level = "uid://bffs0yqr2jdrx"
 target_transition = "LevelTransition2"
 side = 0
 size = 2
+
+[node name="ItemPickup" parent="." unique_id=66762933 instance=ExtResource("4_61w3m")]
+position = Vector2(273, 217)
+item_data = ExtResource("5_pdpul")
