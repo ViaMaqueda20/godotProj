@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cwcnb70jb375m"]
 
-[ext_resource type="Script" uid="uid://bgg7n1ich6nnr" path="res://scenes/heart_gui.gd" id="1_x0egl"]
+[ext_resource type="Script" uid="uid://bgg7n1ich6nnr" path="res://GUI/heart_gui.gd" id="1_x0egl"]
 [ext_resource type="Texture2D" uid="uid://cs4236y5wns32" path="res://assets/life.png" id="2_tp52o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0c2ut"]

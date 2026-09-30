@@ -1,15 +1,15 @@
 [gd_scene format=3 uid="uid://brkagkwkqod41"]
 
-[ext_resource type="Script" uid="uid://dlnk8apxwrrty" path="res://scenes/inventory_solt_ui.gd" id="1_0xeda"]
-[ext_resource type="Texture2D" uid="uid://di582hekpjtca" path="res://assets/items.png" id="2_kv2si"]
+[ext_resource type="Script" uid="uid://dlnk8apxwrrty" path="res://GUI/Inventory/inventory_solt_ui.gd" id="1_e8xb2"]
+[ext_resource type="Texture2D" uid="uid://di582hekpjtca" path="res://assets/items.png" id="2_5ppwp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0c2ut"]
-atlas = ExtResource("2_kv2si")
+atlas = ExtResource("2_5ppwp")
 region = Rect2(0, 0, 16, 16)
 
 [node name="InventorySoltUi" type="Button" unique_id=293172976]
 custom_minimum_size = Vector2(24, 24)
-script = ExtResource("1_0xeda")
+script = ExtResource("1_e8xb2")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=672091876]
 layout_mode = 0
@@ -21,9 +21,10 @@ texture = SubResource("AtlasTexture_0c2ut")
 
 [node name="Label" type="Label" parent="." unique_id=1016968270]
 layout_mode = 0
-offset_left = 13.0
+offset_left = 5.0
 offset_top = -2.0
-offset_right = 32.0
+offset_right = 24.0
 offset_bottom = 21.0
 theme_override_font_sizes/font_size = 9
 text = "99"
+horizontal_alignment = 2

@@ -10,8 +10,8 @@ signal interaction_pressed()
 
 
 ## Preloaded player scene for instantiation
-const PLAYER = preload("res://scenes/player.tscn")
-const PLAYER_INVENTORY_DATA : InventoryData = preload("res://scripts/inventory_data.tres")
+const PLAYER = preload("res://Entities/player.tscn")
+const PLAYER_INVENTORY_DATA : InventoryData = preload("res://GUI/Inventory/inventory_data.tres")
 
 ## Reference to the current player instance
 var player : Player

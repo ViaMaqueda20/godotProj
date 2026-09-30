@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://htsu3544qqff"]
 
-[ext_resource type="Script" uid="uid://ci0xtg5phebn4" path="res://scripts/player_spawner.gd" id="1_27dp6"]
+[ext_resource type="Script" uid="uid://ci0xtg5phebn4" path="res://Levels/player_spawner.gd" id="1_27dp6"]
 [ext_resource type="Texture2D" uid="uid://dwe5xbhu8357f" path="res://assets/player_animation_fin.png" id="2_hiofm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0c2ut"]

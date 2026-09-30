@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://ce7it2wm3wwum"]
 
-[ext_resource type="Script" uid="uid://cet70xf2yani3" path="res://scenes/player_hud.gd" id="1_er5qu"]
+[ext_resource type="Script" uid="uid://cet70xf2yani3" path="res://GUI/player_hud.gd" id="1_er5qu"]
 [ext_resource type="Texture2D" uid="uid://cs4236y5wns32" path="res://assets/life.png" id="2_or0tx"]
-[ext_resource type="PackedScene" uid="uid://cwcnb70jb375m" path="res://scenes/heart_gui.tscn" id="3_qcjqi"]
+[ext_resource type="PackedScene" uid="uid://cwcnb70jb375m" path="res://GUI/heart_gui.tscn" id="3_qcjqi"]
 [ext_resource type="Texture2D" uid="uid://y4lwf3lkwc35" path="res://assets/arrow_touchpad.png" id="4_or0tx"]
 [ext_resource type="Texture2D" uid="uid://du23l5umn3wb" path="res://assets/pause_touchpad.png" id="5_qcjqi"]
 

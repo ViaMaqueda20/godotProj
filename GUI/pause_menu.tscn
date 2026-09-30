@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://c5o8yxhwb2ut"]
 
-[ext_resource type="Script" uid="uid://byk641trpbdl0" path="res://scenes/pause_menu.gd" id="1_n87rw"]
-[ext_resource type="Script" uid="uid://uuqhpf44odvs" path="res://scenes/inventory_ui.gd" id="2_kukqi"]
-[ext_resource type="Texture2D" uid="uid://bwie4wbsew1yg" path="res://assets/item_container.png" id="3_5d2l8"]
-[ext_resource type="Resource" uid="uid://dplqy67fg7n3q" path="res://scripts/inventory_data.tres" id="4_5d2l8"]
+[ext_resource type="Script" uid="uid://byk641trpbdl0" path="res://GUI/pause_menu.gd" id="1_0u1a6"]
+[ext_resource type="Texture2D" uid="uid://bwie4wbsew1yg" path="res://assets/item_container.png" id="2_joq13"]
+[ext_resource type="Script" uid="uid://uuqhpf44odvs" path="res://GUI/Inventory/inventory_ui.gd" id="3_0u1a6"]
+[ext_resource type="Resource" uid="uid://dplqy67fg7n3q" path="res://GUI/Inventory/inventory_data.tres" id="4_0lomq"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0c2ut"]
 content_margin_left = 6.0
 content_margin_top = 6.0
 content_margin_right = 6.0
 content_margin_bottom = 6.0
-texture = ExtResource("3_5d2l8")
+texture = ExtResource("2_joq13")
 texture_margin_left = 10.0
 texture_margin_top = 10.0
 texture_margin_right = 10.0
@@ -18,7 +18,7 @@ texture_margin_bottom = 10.0
 
 [node name="PauseMenu" type="CanvasLayer" unique_id=1521935836]
 process_mode = 3
-script = ExtResource("1_n87rw")
+script = ExtResource("1_0u1a6")
 
 [node name="Control" type="Control" parent="." unique_id=1364762425]
 layout_mode = 3
@@ -77,5 +77,5 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 columns = 6
-script = ExtResource("2_kukqi")
-inventory_data = ExtResource("4_5d2l8")
+script = ExtResource("3_0u1a6")
+inventory_data = ExtResource("4_0lomq")
